@@ -28,8 +28,8 @@ int main() {
 	float Rpaddle_x = 624;
 	float Rpaddle_y = 0;//coordinates and such
 	float ball_dx = 8.0, ball_dy = -8.0;
-	int p1score = 9;
-	int p2score = 9;
+	int p1score = 0;
+	int p2score = 0;
 	bool keyl[2]{ false,false };
 	bool keyr[2]{ false,false };
 	bool redraw = true;
@@ -207,7 +207,6 @@ int main() {
 			al_draw_textf(font, al_map_rgb(200, 200, 255), 320, 20, 0, ("Player 2: %d"), p2score);
 
 			al_flip_display();
-			al_rest(3.0);
 		}//end of redraw
 
 
